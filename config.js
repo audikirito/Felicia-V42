@@ -40,6 +40,7 @@ const readMore = more.repeat(4001)
 
 global.owner = [
 ['6281328834429'],
+['6285163083750'],
 ['6281347927862', '么 Kitsuneee', true]
 ]
 global.mods = []
@@ -211,6 +212,7 @@ global.zenzkey = 'b8040941f7'
 global.lolkey = 'KitsuneOFC' // PUNYA WAHID 357d3c85079c4e0818731e6b
 global.APIs = { // API Prefix
   // name: 'https://website'
+  bear: 'https://saipulanuar.ga',
   nrtm: 'https://nurutomo.herokuapp.com',
   rey: 'https://server-api-rey.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
@@ -236,6 +238,7 @@ global.APIs = { // API Prefix
 
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
+  'https://saipulanuar.ga/': 'zahirgans',
   'https://api.xteam.xyz': 'ebb6251cc00f9c63',
   'https://anabotofc.herokuapp.com/': 'AnaBot',
   'https://api.lolhuman.xyz': 'e54205a4ca2caa368cc067bb',// 8e66d0934cf741bfd2182c16
