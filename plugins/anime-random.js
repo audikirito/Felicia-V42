@@ -131,7 +131,7 @@ if (command == 'akiyama') {
 let haha = await conn.getFile(`https://api-reysekha.herokuapp.com/api/wallpaper/akiyama?apikey=APIKEY`)
 conn.sendButton(m.chat, `*Result From ${command}*`.trim(), author, haha.data, [['𝗡𝗘𝗫𝗧', `/${command}`]], m)}
 if (command == 'anna') {
-let haha = await conn.getFile(`https://api.sekha.tech/api/wallpaper/ana?apikey=apirey`)
+let haha = await conn.getFile(`https://api.zeeoneofc.xyz/api/anime/anna?apikey=5Cd8U3tG`)
 conn.sendButton(m.chat, `*Result From ${command}*`.trim(), author, haha.data, [['𝗡𝗘𝗫𝗧', `/${command}`]], m)}
 if (command == 'asuna') {
 let haha = await conn.getFile(`https://api-reysekha.herokuapp.com/api/wallpaper/asuna?apikey=apirey`)
@@ -194,7 +194,7 @@ if (command == 'keneki') {
 let haha = await conn.getFile(`https://api-reysekha.herokuapp.com/api/wallpaper/keneki?apikey=apirey`)
 conn.sendButton(m.chat, `*Result From ${command}*`.trim(), author, haha.data, [['𝗡𝗘𝗫𝗧', `/${command}`]], m)} 
 if (command == 'kotori') {
-let haha = await conn.getFile(`https://api-reysekha.herokuapp.com/api/wallpaper/kotori?apikey=apirey`)
+let haha = await conn.getFile(`https://revita.herokuapp.com/api/wallpaper/kotori?apikey=ApiRevita`)
 conn.sendButton(m.chat, `*Result From ${command}*`.trim(), author, haha.data, [['𝗡𝗘𝗫𝗧', `/${command}`]], m)}  
 if (command == 'kurumi') {
 let haha = await conn.getFile(`https://api-reysekha.herokuapp.com/api/wallpaper/kurumi?apikey=apirey`)
