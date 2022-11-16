@@ -9,17 +9,17 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let img = await q.download?.()
     let url = await uploadImage(img)
     
-    let js = await fetch(`https://api.lolhuman.xyz/api/agedetect?apikey=KitsuneOFC&img=${encodeURIComponent(url)}`)
+    let js = await fetch(`https://api.lolhuman.xyz/api/agedetect?apikey=${global.lolkey}&img=${encodeURIComponent(url)}`)
     let has = await js.json()
-    await m.reply('*_Hasil Deteksi Usia Dari Gambar Tersebut Adalah ' + has.result + ' Tahun_*')
-    
+    await m.reply('Hasil Deteksi Usia Dari Gambar Tersebut Adalah ' + has.result + ' Tahun')
+     let img = await q.download?.()
+      if (!img) throw `*_Balas Gambar/Video/Gif Dengan Perintah ${usedPrefix + command}_*`
 }
 
 handler.help = ['agedetect (caption|reply media)']
 handler.tags = ['maker']
 handler.command = /^(agedetect|usia)$/i
-handler.register = true
-handler.limit = 1
+
 export default handler
 
 const isUrl = (text) => {

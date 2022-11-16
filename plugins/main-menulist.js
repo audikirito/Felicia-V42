@@ -95,7 +95,7 @@ let tags
 let emot = ` ${pickRandom(['⎔', '◈▻', '✦', '⭑', 'ᯬ', '⭔', '◉', '⬟', '᭻', '»', '〆', '々', '⛥', '✗', '⛊', '⚜', '⚝', '⚚', '♪'])}`
 let rndom = `${pickRandom(['defaultMenu', 'defmenu1'])}`
 let teks = `${args[0]}`.toLowerCase()
-let arrayMenu = ['all', 'anime', 'update', 'maker', 'berita', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database","quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
+let arrayMenu = ['all', 'anime', 'update', 'maker', 'berita', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
 if (!arrayMenu.includes(teks)) teks = '404'
 if (teks == 'all') tags = {
 'main': 'Main',
@@ -281,7 +281,7 @@ rows: [
 {title: `🌐 • 𝗜𝗻𝘁𝗲𝗿𝗻𝗲𝘁 𝗠𝗲𝗻𝘂`, rowId: ".? internet", description: "ᴍᴇɴᴊᴇʟᴀᴊᴀʜɪ ᴅᴜɴɪᴀ ᴍᴀʏᴀ"},
 {title: `📰 • 𝗡𝗲𝘄𝘀 𝗠𝗲𝗻𝘂`, rowId: ".? berita", description: "ᴛᴀʜᴜ ʟᴇʙɪʜ ᴄᴇᴘᴀᴛ "},
 {title: `🔽 • 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 𝗠𝗲𝗻𝘂`, rowId: ".? downloader", description: "ᴍᴇɴɢᴜɴᴅᴜʜ sᴇᴍᴜᴀ ғɪʟᴇ ᴠɪᴀ ᴡʜᴀᴛsᴀᴘᴘ "},
-{title: `🖼️ • 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗠𝗲𝗻𝘂`, rowId: ".? stiker", description: "ᴍᴇᴍʙᴜᴀᴛ sᴛɪᴋᴇʀ"},
+{title: `🖼️ • 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 & 𝗠𝗮𝗸𝗲𝗿 𝗠𝗲𝗻𝘂`, rowId: ".? stiker", description: "ᴍᴇᴍʙᴜᴀᴛ sᴛɪᴋᴇʀ & ɪᴍᴀɢᴇ ᴄʀᴇᴀᴛɪᴏɴ"},
 {title: `✍️ • 𝗠𝗲𝗻𝘂𝗹𝗶𝘀 𝗠𝗲𝗻𝘂`, rowId: ".? nulis", description: "ᴍᴇᴍʙᴀɴᴛᴜ ᴍᴇɴᴜʟɪs"},
 {title: `💽 • 𝗔𝘂𝗱𝗶𝗼 𝗠𝗲𝗻𝘂`, rowId: ".? audio", description: "ᴇᴅɪᴛᴏʀ ᴍᴘ3"},
 {title: `🎵 • 𝗦𝗼𝘂𝗻𝗱 𝗠𝗲𝗻𝘂`, rowId: ".soundmenu", description: "ʀᴀᴛᴜsᴀɴ ᴍᴜsɪᴋ"},

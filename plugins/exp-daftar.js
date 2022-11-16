@@ -10,8 +10,9 @@ let namae = conn.getName(m.sender)
 const sections = [
 {
 title: "𝗦𝗬𝗔𝗥𝗔𝗧 & 𝗞𝗘𝗧𝗘𝗡𝗧𝗨𝗡 𝗕𝗢𝗧",
-rows: [
-{title: "These are the Rules", rowId: '.rules'}
+rows: 
+[{title: "These are the Rules", rowId: '.rules'},
+{title: "FAQ", rowId: '.faq'}
 ]
 }
 ]
@@ -19,8 +20,8 @@ rows: [
 const listMessage = {
   text: `\n*- Wajib Nama & Umur Asli*\n*- Mendaftar = Setuju S&K Bot*`,
   footer: `*Format: #daftar namamu.umurmu*\n*Contoh: #daftar Keiii.17*`,
-  title: "*REGISTRATION 📝*",
-  buttonText: "𝗣𝗥𝗘𝗦𝗦",
+  title: "*HOW TO REGISTER 📝*",
+  buttonText: "𝗥𝗨𝗟𝗘",
   sections
 }
 

@@ -15,7 +15,7 @@ Author: *${res.author}*
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^(tiktok|ttdl|tt|tiktokdl|tiktokmp4|tiktoknown)$/i
+handler.command = /^(tiktok|ttdl|tt|tiktokdl|tiktokmp4|tiktoknowm)$/i
 handler.register = true
 handler.limit = 1
 export default handler

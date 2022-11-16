@@ -1,44 +1,17 @@
-import translate from 'translate-google-api'
-const defaultLang = 'en'
-const tld = 'cn'
+import translate from '@vitalets/google-translate-api'
 
 let handler = async (m, { args, usedPrefix, command }) => {
-    let err = `
-*Fitur Untuk Mentranslate Teks*
-
-*_Format: ${usedPrefix + command} <lang> <text>_*
-*_Contog: ${usedPrefix + command} id i hate you_*
-
-*Daftar Bahasa Yang Didukung*
-*_https://cloud.google.com/translate/docs/languages_*
-`.trim()
-
-    let lang = args[0]
-    let text = args.slice(1).join(' ')
-    if ((args[0] || '').length !== 2) {
-        lang = defaultLang
-        text = args.join(' ')
-    }
-    if (!text && m.quoted && m.quoted.text) text = m.quoted.text
-
-    let result
-    try {
-        result = await translate(`${text}`, {
-            tld,
-            to: lang,
-        })
-    } catch (e) {
-        result = await translate(`${text}`, {
-            tld,
-            to: defaultLang,
-        })
-        throw err
-    } finally {
-        m.reply(result[0])
-    }
-
+	let lang, text
+	if (args.length >= 2) {
+		lang = args[0], text = args.slice(1).join(' ')
+	} else if (m.quoted && m.quoted.text) {
+		lang = args[0], text = m.quoted.text
+	} else throw `*_Contoh: ${usedPrefix + command} id Hi honey_*`
+	let res = await translate(text, { to: lang, autoCorrect: true }).catch(_ => null)
+	if (!res) throw `Error: The language "${lang}" is not supported`
+	m.reply(`*From:* ${res.from.language.iso}\n*To:* ${lang}\n\n${res.text}`.trim())
 }
-handler.help = ['translate'].map(v => v + ' <lang> <teks>')
+handler.help = ['translate']
 handler.tags = ['tools']
 handler.command = /^(tr(anslate)?)$/i
 handler.register = true

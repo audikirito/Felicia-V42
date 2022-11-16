@@ -45,7 +45,7 @@ conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`
 handler.help = ['rules']
 handler.tags = ['info']
 handler.command = /^(rules)$/i
-handler.register = true
+handler.register = false
 export default handler
 
 function ucapan() {
