@@ -20,6 +20,18 @@ const items = {
         },
         iron: { 
         	money: 23000
+        },
+        common: {
+            money: 5000
+        },
+        uncommon: {
+            money: 7000
+        },
+        mythic: {
+            money: 9000
+        },
+        legendary: {
+            money: 12000
         }
     },
     sell: {
