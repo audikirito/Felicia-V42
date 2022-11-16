@@ -14,14 +14,14 @@ let handler = async (m, { conn, usedPrefix }) => {
     let data = await res.json()
     let json = data[Math.floor(Math.random() * data.length)]
     let caption = `
-*SUSUN-KATA GAMES 🎮*
+*SUSUN-KATA Games 🎮*
 
 *${json.soal}*
 
 *🗃️ Tipe ${json.tipe}*
-*⏱️ Timeout ${(timeout / 1000).toFixed(2)} Detik*
-*🔍 Ketik ${usedPrefix}suka Untuk Bantuan
-*🎁 Prize ${poin} XP
+*⏱️ Timeout* ${(timeout / 1000).toFixed(2)} Detik*
+*🔍 Ketik* ${usedPrefix}suka Untuk Bantuan
+*🎁 Prize* ${poin} XP
 `.trim()
     conn.susunkata[id] = [
         await conn.sendBut(m.chat, caption, wm, '𝗕𝗔𝗡𝗧𝗨𝗔𝗡', '.suka'),

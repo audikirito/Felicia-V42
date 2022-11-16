@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     if (id in conn.caklontong) return conn.reply(m.chat, '*_Masih Ada Soal Belum Terjawab Dichat Ini_*', conn.caklontong[id][0])
     let json = await caklontong()
     let caption = `
-*CAK-LONTONG GAMES 🎮*
+*CAK-LONTONG Games 🎮*
 
 *_${json.soal}_*
 

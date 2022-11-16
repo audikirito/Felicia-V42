@@ -120,6 +120,7 @@ let handler = async (m, { conn }) => {
 ${Object.keys(inventory.others).map(v => user[v] && `*${global.rpg.emoticon(v)} ${v}:* ${user[v]}`).filter(v => v).join('\n')}${tools ? `
 *🎖️ Tier:* ${user.role}
 
+*👑 Title:* ${user.title}
 *TOOLS*
 ${tools}` : ''}${dura ? `
 

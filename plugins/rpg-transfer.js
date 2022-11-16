@@ -11,11 +11,11 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     const item = items.filter(v => v in user && typeof user[v] == 'number')
     let lol = `*TRANSFER ITEMS*
 
-*_Format: ${usedPrefix}${command} <type> <value> <number>
-*_Contoh: ${usedPrefix}${command} money 9999 @621927237001
+*_Format: ${usedPrefix}${command} <type> <value> <number>_*
+*_Contoh: ${usedPrefix}${command} money 9999 @621927237001_*
 
 *Transferable Items*
-${item.map(v => `*_${rpg.emoticon(v)}${v}`.trim()).join('_*\n')}
+${item.map(v => `*_${rpg.emoticon(v)}${v}`.trim()).join('_*\n')}_*
 `.trim()
     const type = (args[0] || '').toLowerCase()
     if (!item.includes(type)) return m.reply(lol)

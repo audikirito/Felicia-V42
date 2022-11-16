@@ -12,7 +12,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = await tebakgambar()
     // if (!json.status) throw json
     let caption = `
-*TEBAK-GAMBAR GAMES 🎮*
+*TEBAK-GAMBAR Games 🎮*
 
 *⏱️ Timeout ${(timeout / 1000).toFixed(2)} Detik*
 *🔍 Ketik* ${usedPrefix}hint Untuk Hint

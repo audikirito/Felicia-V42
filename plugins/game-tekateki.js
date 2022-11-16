@@ -11,13 +11,13 @@ let handler = async (m, { conn, usedPrefix }) => {
     let src = await (await fetch('https://raw.githubusercontent.com/qisyana/scrape/main/tekateki.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
-*TEKA-TEKI GAMES 🎮*
+*TEKA-TEKI Games 🎮*
 
 *${json.pertanyaan}*
     
 *⏱️ Timeout ${(timeout / 1000).toFixed(2)} Detik*
-*🔍 Ketik ${usedPrefix}tekki Untuk Bantuan
-*🎁 Prize ${poin} XP
+*🔍 Ketik* ${usedPrefix}tekki Untuk Bantuan
+*🎁 Prize* ${poin} XP
 `.trim()
     conn.tekateki[id] = [
         await conn.reply(m.chat, caption, m),

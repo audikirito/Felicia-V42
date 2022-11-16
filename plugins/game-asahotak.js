@@ -12,7 +12,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/asahotak.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
-*ASAH-OTAK GAMES 🎮*
+*ASAH-OTAK Games 🎮*
 
 *_${json.soal}_*
 

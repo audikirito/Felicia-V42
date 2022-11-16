@@ -5,7 +5,7 @@ let handler = async(m, { conn, text }) => {
   if (!text) return conn.reply(m.chat, '*Fitur Untuk Stalking Akun Github*\n\n*_Contoh: .githubstalk Nurutomo_*', m)
 
   await m.reply('*Searching...*')
-    let res = await fetch(`https://api.lolhuman.xyz/api/github/${text}?apikey=KitsuneOFC`)
+    let res = await fetch(`https://api.lolhuman.xyz/api/github/${text}?apikey=${global.lolkey}`)
     let json = await res.json()
     if (res.status !== 200) throw await res.text()
     if (!json.status) throw json
@@ -29,7 +29,7 @@ let handler = async(m, { conn, text }) => {
 }
 handler.help = ['githubstalk'].map(v => v + ' <query>')
 handler.tags = ['tools']
-handler.command = /^(githubstalk)$/i
+handler.command = /^(githubstalk|ghstalk)$/i
 handler.register = true
 handler.limit = true
 export default handler

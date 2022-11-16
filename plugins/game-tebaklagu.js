@@ -16,12 +16,13 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = result.result
     // if (!json.status) throw json
     let caption = `
-*TEBAK-LAGU GAMES 🎮*
+*TEBAK-LAGU Games 🎮*
 
 *⏱️ Timeout ${(timeout / 1000).toFixed(2)} Detik*
 *🔍 Ketik* ${usedPrefix}cek* Untuk Bantuan
 *🎁 Prize* ${poin} XP
-*⚠️ Balas Pesan Ini Untuk Menjawab*`.trim()
+
+*_Balas Pesan Ini Untuk Menjawab_*`.trim()
     conn.tebaklagu[id] = [
         await conn.sendBut(m.chat, caption, wm, '𝗕𝗔𝗡𝗧𝗨𝗔𝗡', '.cek', m),
         json, poin,

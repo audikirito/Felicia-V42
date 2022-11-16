@@ -11,11 +11,11 @@ let handler = async (m, { conn, usedPrefix }) => {
     }
     const json = await siapakahaku()
     let caption = `
-*SIAPAKAH-AKU GAMES 🎮*
+*SIAPAKAH-AKU Games 🎮*
 
 *Siapakah Aku ${json.soal}*
 
-*⏱️ Timeout* *${(timeout / 1000).toFixed(2)} Detik*
+*⏱️ Timeout ${(timeout / 1000).toFixed(2)} Detik*
 *🔍 Ketik* ${usedPrefix}who Untuk Bantuan
 *🎁 Prize* ${poin} XP
 `.trim()
