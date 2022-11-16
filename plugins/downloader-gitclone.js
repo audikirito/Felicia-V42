@@ -3,7 +3,7 @@ import fs from 'fs'
 import fetch from 'node-fetch'
 const regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 let handler = async (m, { args, usedPrefix, command }) => {
-    if (!args[0]) throw `*Fitur Untuk Unduh Repositori Github*\n\n*_Contoh: ${usedPrefix}gitclone https://github.com/Kitsune/Felicia-MD-V41`
+    if (!args[0]) throw `*Fitur Untuk Unduh Repositori Github*\n\n*_Contoh: ${usedPrefix}gitclone https://github.com/Kitsune/Felicia-MD-V41_*`
     if (!regex.test(args[0])) throw '*Link Salah*'
     let [_, user, repo] = args[0].match(regex) || []
     repo = repo.replace(/.git$/, '')
