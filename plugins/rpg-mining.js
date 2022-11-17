@@ -1,4 +1,4 @@
-const cooldown = 300000
+const cooldown = 3600000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastmining))
@@ -39,13 +39,13 @@ export default handler
 function reward(user = {}) {
     let rewards = {
         reward: {
-            exp: 49999,
-            trash: 404,
-            string: 25,
-            rock: 20,
-            iron: 25,
-            diamond: 10,
-            emerald: 4,
+            exp: 5000,
+            trash: 5000,
+            string: 3,
+            rock: 3,
+            iron: 3,
+            diamond: 2,
+            emerald: 1,
             common: 2 * (user.dog && (user.dog > 2 ? 2 : user.dog) * 1.2 || 1),
             uncommon: [0, 0, 0, 1, 2].concat(
                 new Array(5 - (
