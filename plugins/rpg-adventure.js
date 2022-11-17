@@ -1,4 +1,4 @@
-const cooldown = 300000
+const cooldown = 3600000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
@@ -26,9 +26,9 @@ Fitur Berpetualang Sedang CD\nSelama *🕐 ${timers.toTimeString()}*
     m.reply(text.trim())
     user.lastadventure = new Date * 1
 }
-handler.help = ['adventure', 'petualang', 'berpetualang', 'mulung']
+handler.help = ['adventure', 'petualang', 'berpetualang']
 handler.tags = ['rpg']
-handler.command = /^(adventure|(ber)?petualang(ang)?|mulung)$/i
+handler.command = /^(adventure|(ber)?petualang(ang)?)$/i
 handler.register = true
 handler.limit = 1
 handler.cooldown = cooldown
@@ -39,9 +39,9 @@ export default handler
 function reward(user = {}) {
     let rewards = {
         reward: {
-            money: 99999,
-            exp: 49999,
-            trash: 404,
+            money: 100000,
+            exp: 50000,
+            trash: 50,
             potion: 4,
             rock: 4,
             wood: 4,
