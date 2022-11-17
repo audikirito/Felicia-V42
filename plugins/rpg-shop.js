@@ -22,21 +22,21 @@ const items = {
         	money: 23000
         },
         common: {
-            money: 5000
+            money: 25000
         },
         uncommon: {
-            money: 7000
+            money: 30000
         },
         mythic: {
-            money: 9000
+            money: 35000
         },
         legendary: {
-            money: 12000
+            money: 42000
         }
     },
     sell: {
         potion: {
-            money: 3300,
+            money: 2200,
         },
         trash: {
             money: 10
@@ -51,16 +51,16 @@ const items = {
             money: 4500
         },
         iron: {
-            money: 7600
+            money: 5600
         },
         gold: {
-            money: 9000
+            money: 5000
         },
         diamond: {
-            money: 9000
+            money: 6000
         },
         emerald: {
-            money: 15000
+            money: 9000
         }
     }
 }
