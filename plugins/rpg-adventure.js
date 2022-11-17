@@ -1,4 +1,4 @@
-const cooldown = 3600000
+const cooldown = 300000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
@@ -39,32 +39,32 @@ export default handler
 function reward(user = {}) {
     let rewards = {
         reward: {
-            money: 100000,
-            exp: 50000,
-            trash: 50,
-            potion: 3,
-            rock: 3,
-            wood: 3,
-            string: 3,
+            money: 99999,
+            exp: 49999,
+            trash: 404,
+            potion: 4,
+            rock: 4,
+            wood: 4,
+            string: 4,
             common: 2 * (user.dog && (user.dog > 2 ? 2 : user.dog) * 1.2 || 1),
             uncommon: [0, 0, 0, 1, 2].concat(
                 new Array(5 - (
                     (user.dog > 2 && user.dog < 6 && user.dog) || (user.dog > 5 && 5) || 2
                 )).fill(0)
             ),
-            mythic: [0, 0, 0, 3, 0, 1, 1, 0, 2].concat(
+            mythic: [0, 0, 0, 0, 0, 1, 0, 0, 2].concat(
                 new Array(8 - (
                     (user.dog > 5 && user.dog < 8 && user.dog) || (user.dog > 7 && 8) || 3
                 )).fill(0)
             ),
-            legendary: [0, 0, 0, 0, 3, 0, 0, 1, 0, 2].concat(
+            legendary: [0, 0, 0, 0, 0, 0, 0, 1, 0, 2].concat(
                 new Array(10 - (
                     (user.dog > 8 && user.dog) || 4
                 )).fill(0)
             ),
-            iron: [0, 0, 2, 1, 0, 2],
-            gold: [0, 0, 1, 0, 0, 1, 2],
-            diamond: [0, 0, 1, 0, 0, 0, 1, 2].concat(
+            iron: [0, 0, 0, 1, 0, 2],
+            gold: [0, 0, 0, 0, 0, 1, 2],
+            diamond: [0, 0, 0, 0, 0, 0, 1, 2].concat(
                 new Array(5 - (
                     (user.fox < 6 && user.fox) || (user.fox > 5 && 5) || 0
                 )).fill(0)
