@@ -16,7 +16,7 @@ handler.help = ['gdrive'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^gd(rive(d(own(load(er)?)?|l))?|dle|l)$/i
 handler.limit = 1
-handler.register = true
+handler.register = false
 export default handler
 
 async function GDriveDl(url) {
