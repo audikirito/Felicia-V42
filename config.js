@@ -39,59 +39,59 @@ const readMore = more.repeat(4001)
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ NO OWNER ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 
 global.owner = [
-['6281328834429'],
-['6285163083750'],
-['6281347927862', '么 Kitsuneee', true]
+['6283896480283'],
+['6283896480283'],
+['6283896480283', '么 audikirito', true]
 ]
 global.mods = []
-global.prems = ['6281347927862']
-global.nomorbot = '6282253479547'
-global.nomorown = '6281347927862'
-global.nomorown1 = '6281347927862'
-global.nomorown2 = '6281328834429'
+global.prems = ['6283896480283']
+global.nomorbot = '6285325342577'
+global.nomorown = '6283896480283'
+global.nomorown1 = '6283896480283'
+global.nomorown2 = '6283896480283'
 global.nomorwa = '0'
 
 
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ WM ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 
 global.readMore = readMore
-global.author = '𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 𝗞𝗶𝘁𝘀𝘂𝗻𝗲'
+global.author = '𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 audikirito'
 global.namebot = '⌬ 𝗙𝗲𝗹𝗶𝗰𝗶𝗮-𝗠𝗗'
-global.wm = '© 𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 𝗞𝗶𝘁𝘀𝘂𝗻𝗲'
+global.wm = '© 𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 audikirito'
 global.media = 'https://telegra.ph/file/4b9c029e5366ad3301d09.jpg'
 global.watermark = wm
 global.wm2 = '⌬ 𝗙𝗲𝗹𝗶𝗰𝗶𝗮-𝗠𝗗 '
 global.botdate = `𝗗𝗔𝗧𝗘: ${week} ${date}\n𝗧𝗜𝗠𝗘: ${wktuwib}`
 global.packname = wm
 global.bottime = `𝗧 𝗜 𝗠 𝗘: ${wktuwib}`
-global.titlebot = `𝗙𝗘𝗟𝗜𝗖𝗜𝗔 𝗩𝟰𝟮`
+global.titlebot = `audikirito`
 global.stickpack = ''
-global.stickauth = `🖍️ 𝗦𝘁𝗶𝗰𝗸𝗲𝗿𝘀 𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 𝗕𝗼𝘁 ⌬ 𝗙𝗲𝗹𝗶𝗰𝗶𝗮-𝗠𝗗\n\n• 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 么 𝗞𝗶𝘁𝘀𝘂𝗻𝗲𝗲𝗲\n• 𝗕𝗼𝘁 𝗡𝘂𝗺𝗯𝗲𝗿 𝟬𝟴𝟮𝟮-𝟱𝟯𝟰𝟳-𝟵𝟱𝟰𝟳\n• 𝗕𝗼𝘁 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 𝗩𝟰𝟮`
+global.stickauth = `🖍️ 𝗦𝘁𝗶𝗰𝗸𝗲𝗿𝘀 𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 𝗕𝗼𝘁 ⌬ audikirito\n\n• 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 么 audikirito\n• 𝗕𝗼𝘁 𝗡𝘂𝗺𝗯𝗲𝗿 0838-9648-0283\n• 𝗕𝗼𝘁 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 𝗩𝟰𝟮`
 global.week = `${week} ${date}`
 global.wibb = `${wktuwib}`
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ OWNER INFO ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
-global.nameown1= 'Kitsune'
-global.nameown2 = 'Avri'
+global.nameown1= 'kirito'
+global.nameown2 = 'audi'
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ MEDIA LINK ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
 global.Linkgc = '*Mohon Tunggu*'
 global.lynk = '-'
 
 
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ MEDIA SOSSIAL ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
-global.sig = 'https://www.tiktok.com/@onlyonegreat'
-global.sgh = 'https://www.tiktok.com/@onlyonegreat' //github
-global.sgc = 'https://chat.whatsapp.com/HanfYszpKzbGcCGgWdHLTa' //group whatsapp
-global.sdc = 'https://www.tiktok.com/@onlyonegreat' //discord
-global.snh = 'https://www.tiktok.com/@onlyonegreat'
+global.sig = 'https://www.tiktok.com/@audikirito'
+global.sgh = 'https://www.tiktok.com/' //github
+global.sgc = 'https://chat.whatsapp.com/' //group whatsapp
+global.sdc = 'https://www.tiktok.com/' //discord
+global.snh = 'https://www.tiktok.com/'
 
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ DONASI ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
-global.pdana = '0822-5347-9547'
-global.povo = '0822-5347-9547'
-global.pgopay = '0822-5347-9547'
+global.pdana = '0838-9648-0283'
+global.povo = '0838-9648-0283'
+global.pgopay = '0838-9648-0283'
 global.plinkaja = '-' //link aja
-global.ppulsa = '0822-5347-9547'
-global.ppulsa2 = '0851-6308-3750'
-global.psaweria = 'https://saweria.co/kitsunee928'
+global.ppulsa = '0838-9648-0283'
+global.ppulsa2 = '-'
+global.psaweria = 'https://saweria.co/'
 
 
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ TAMPILAN ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
